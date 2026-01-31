@@ -29,7 +29,7 @@ body {
   width: 55px;
   height: 55px;
   background-size: cover;
-  background-image: url(/image/Logo.png);
+  background-image: url(../image/Logo.png);
   border-radius: 50px;
 }
 
@@ -58,7 +58,7 @@ body {
   height: 60vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/image/unindra.png");
+    url("../image/unindra.png");
   background-size: cover;
   background-position: center 40%;
   display: flex;
@@ -139,19 +139,19 @@ body {
 }
 
 #Kampus-A {
-  background-image: url(/image/kampusa.jpg);
+  background-image: url(../image/kampusa.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #Kampus-B {
-  background-image: url(/image/kampusb.jpg);
+  background-image: url(../image/kampusb.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #Global-Lab {
-  background-image: url(/image/global.jpg);
+  background-image: url(../image/global.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -268,7 +268,7 @@ footer {
   height: 40vh;
   background:
     linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
-    url("/image/Kampus_B.jpg");
+    url("../image/Kampus_B.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
