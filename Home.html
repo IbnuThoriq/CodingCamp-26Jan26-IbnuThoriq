@@ -1,0 +1,162 @@
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first Portofolio</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="Navbar">
+      <div class="Foto-Profil"></div>
+      <div class="Menu">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="OurProfile.html">Our Profile</a></li>
+          <li><a href="#halaman-portfolio">Portofolio</a></li>
+          <li><a href="#Pesan">Massage Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Header -->
+    <main>
+      <header class="Hero">
+        <h1>Welcome To Unindra Studio Website</h1>
+        <p>Innovation Hub for Future Tech Leaders.</p>
+      </header>
+      <!-- Kartu -->
+      <div class="Info-Kartu">
+        <div class="Info-Teks">
+          <h2>
+            Hi <span id="Nama-User"></span>, Welcome To Unindra Studio Website
+          </h2>
+          <p>
+            Unindra Studio secara resmi didirikan sebagai entitas kolektif
+            kreatif pada tanggal 12 Oktober 2023. Melalui dedikasi para
+            pendirinya untuk membangun ekosistem digital yang sehat di
+            lingkungan kampus, institusi fiktif ini...
+          </p>
+          <input
+            type="button"
+            value="Lihat Selengkapnya"
+            id="Lihat-Selengkapnya"
+            onclick="window.location.href = 'OurProfile.html'"
+          />
+        </div>
+
+        <div class="Info-Gambar">
+          <img
+            src="/image/rektor.png"
+            alt="Pimpinan Perusahaan"
+            id="Rektor"
+            style="width: 9rem"
+          />
+        </div>
+      </div>
+      <!-- Our Headquarter -->
+      <section class="portfolio">
+        <h1 class="Sub-Judul">Our Headquarter</h1>
+        <div class="Hq-Wadah">
+          <div class="Hq-Item">
+            <div class="Lingkaran" id="Kampus-A"></div>
+            <p>Rancho</p>
+          </div>
+          <div class="Hq-Item">
+            <div class="Lingkaran" id="Kampus-B"></div>
+            <p>Kampung Gedong</p>
+          </div>
+          <div class="Hq-Item">
+            <div class="Lingkaran" id="Global-Lab"></div>
+            <p>Global Lab</p>
+          </div>
+        </div>
+      </section>
+      <!-- Portofolio -->
+      <section class="portfolio" id="halaman-portfolio">
+        <h1>Our Latest Projects</h1>
+        <br />
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <img src="/image/Library.png" alt="Web Project" />
+            <h3>Unindra Library System</h3>
+            <p>
+              Digitalisasi perpustakaan kampus untuk peminjaman buku yang lebih
+              cepat.
+            </p>
+            <span>Tech: HTML, CSS, JS</span>
+          </div>
+
+          <div class="portfolio-card">
+            <img src="/image/UMKM.jpg" alt="UX Project" />
+            <h3>UMKM Landing Page</h3>
+            <p>
+              Membantu pelaku usaha lokal go-digital dengan desain web
+              responsif.
+            </p>
+            <span>Tech: Responsive Web Design</span>
+          </div>
+        </div>
+      </section>
+      <!-- Massage Us -->
+      <section id="Pesan">
+        <h1 class="Sub-Judul">Massage Us</h1>
+        <div class="Wadah">
+          <div class="Form-Box">
+            <div class="Form-Grup">
+              <label>Nama</label>
+              <input type="text" placeholder="Nama" id="input-nama" />
+            </div>
+
+            <div class="Form-Grup">
+              <label>Tanggal Lahir</label>
+              <input type="date" value="2023-04-02" id="input-tanggal" />
+            </div>
+
+            <div class="Form-Grup">
+              <label>Jenis Kelamin</label>
+              <div class="Radio-Grup">
+                <label
+                  ><input
+                    type="radio"
+                    name="gender"
+                    id="gender-l"
+                    value="Laki-Laki"
+                  />
+                  Laki-Laki</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="gender"
+                    id="gender-p"
+                    value="Perempuan"
+                  />
+                  Perempuan</label
+                >
+              </div>
+            </div>
+
+            <div class="Form-Grup">
+              <label>Pesan</label>
+              <textarea placeholder="Pesan" id="input-pesan"></textarea>
+            </div>
+
+            <button class="Tombol-Kirim">Submit</button>
+          </div>
+
+          <div id="Tampilan-Box" class="Output-Box">
+            <p>Current time: <span id="time-res"></span></p>
+            <p>Nama: <span id="name-res"></span></p>
+            <p>Tanggal Lahir: <span id="date-res"></span></p>
+            <p>Jenis Kelamin: <span id="gender-res"></span></p>
+            <p>Pesan: <span id="msg-res"></span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>Created By Thoriq</footer>
+
+    <script src="/js/javascript.js"></script>
+  </body>
+</html>

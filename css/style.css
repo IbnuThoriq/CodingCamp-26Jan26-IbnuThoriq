@@ -1,0 +1,396 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%;
+  background: #2c3e50;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.Foto-Profil {
+  width: 55px;
+  height: 55px;
+  background-size: cover;
+  background-image: url(/image/Logo.png);
+  border-radius: 50px;
+}
+
+.Menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.Menu ul li {
+  margin-left: 20px;
+}
+
+.Menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.Menu ul li a:hover {
+  color: #3498db;
+}
+
+/* Header */
+.Hero {
+  height: 60vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/image/unindra.png");
+  background-size: cover;
+  background-position: center 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.Hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Info Card */
+.Info-Kartu {
+  display: flex;
+  align-items: center;
+  padding: 50px 10%;
+  background: white;
+  gap: 40px;
+}
+
+.Info-Teks {
+  flex: 2;
+}
+.Info-Teks h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+#Lihat-Selengkapnya {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.Info-Gambar {
+  flex: 1;
+  text-align: center;
+}
+#Rektor {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Our Headquarter */
+.Sub-Judul {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #2c3e50;
+}
+
+.Hq-Wadah {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.Hq-Item {
+  text-align: center;
+}
+.Lingkaran {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #3498db;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-size: cover;
+}
+
+#Kampus-A {
+  background-image: url(/image/Kampus_A.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#Kampus-B {
+  background-image: url(/image/Kampus_B.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#Global-Lab {
+  background-image: url(/image/Global.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Portofolio */
+.portfolio {
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px 10%;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+}
+.portfolio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.portfolio-card h3,
+.portfolio-card p,
+.portfolio-card span {
+  padding: 10px 20px;
+  display: block;
+}
+.portfolio-card span {
+  color: #3498db;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Message Us */
+.Wadah {
+  display: flex;
+  gap: 30px;
+  padding: 20px 10% 50px;
+}
+
+.Form-Box {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.Form-Grup {
+  margin-bottom: 15px;
+}
+.Form-Grup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.Form-Grup input[type="text"],
+.Form-Grup input[type="date"],
+.Form-Grup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.Radio-Grup {
+  display: flex;
+  gap: 15px;
+  padding: 5px 0;
+}
+.Tombol-Kirim {
+  width: 100%;
+  padding: 12px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.Output-Box {
+  flex: 1;
+  background: #ecf0f1;
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 5px solid #3498db;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Khusus Halaman Profile */
+
+/* Header */
+.Hero2 {
+  height: 40vh;
+  background:
+    linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
+    url("/image/Kampus_B.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Profil */
+.Wadah-Penjelasan {
+  display: flex;
+  align-items: flex-start;
+  padding: 60px 10%;
+  gap: 40px;
+  background: white;
+}
+
+#Penjelasan {
+  flex: 2;
+  text-align: justify;
+}
+
+#Penjelasan h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-left: 5px solid #3498db;
+  padding-left: 15px;
+}
+
+#Gambar-Profil {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#Gambar-Profil img {
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+#Gambar-Profil img:hover {
+  transform: scale(1.05);
+}
+
+/* Visi Tujuan dan Moto */
+.Visi-Misi-Moto-Tujuan {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 40px 10%;
+  background: #f9f9f9;
+}
+
+.Visi,
+.Misi,
+.Tujuan,
+.Moto {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #3498db;
+}
+
+.Visi h2,
+.Misi h2,
+.Tujuan h2,
+.Moto h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.Moto {
+  grid-column: span 2;
+  text-align: center;
+  background: #ecf0f1;
+  border-top: 4px solid #2c3e50;
+}
+
+.Moto i {
+  color: #3498db;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+  }
+  .Menu ul {
+    margin-top: 15px;
+  }
+  .Info-Kartu,
+  .Wadah {
+    flex-direction: column;
+  }
+  .Hq-Wadah {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* Responsive Profile */
+@media screen and (max-width: 992px) {
+  .Wadah-Penjelasan {
+    flex-direction: column;
+  }
+
+  #Gambar-Profil img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .Visi-Misi-Moto-Tujuan {
+    grid-template-columns: 1fr;
+  }
+
+  .Moto {
+    grid-column: span 1;
+  }
+}
