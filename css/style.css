@@ -139,19 +139,19 @@ body {
 }
 
 #Kampus-A {
-  background-image: url(/image/Kampus_A.jpg);
+  background-image: url(/image/kampusa.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #Kampus-B {
-  background-image: url(/image/Kampus_B.jpg);
+  background-image: url(/image/kampusb.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #Global-Lab {
-  background-image: url(/image/Global.jpg);
+  background-image: url(/image/global.jpg);
   background-size: cover;
   background-position: center;
 }
