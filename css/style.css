@@ -29,7 +29,7 @@ body {
   width: 55px;
   height: 55px;
   background-size: cover;
-  background-image: url(../image/Logo.png);
+  background-image: url(../image/logo.png);
   border-radius: 50px;
 }
 
@@ -268,7 +268,7 @@ footer {
   height: 40vh;
   background:
     linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
-    url("../image/Kampus_B.jpg");
+    url("../image/kampusb.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
