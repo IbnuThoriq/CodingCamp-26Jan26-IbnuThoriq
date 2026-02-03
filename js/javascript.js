@@ -1,3 +1,24 @@
+//function list mobile
+
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("show");
+}
+
+document.querySelectorAll("#navMenu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    document.getElementById("navMenu").classList.remove("show");
+  });
+});
+
+document.addEventListener("click", function (e) {
+  const menu = document.getElementById("navMenu");
+  const icon = document.querySelector(".menu-icon");
+
+  if (!menu.contains(e.target) && !icon.contains(e.target)) {
+    menu.classList.remove("show");
+  }
+});
+
 //Function Nama
 function sapaan() {
   let namaTersimpan = sessionStorage.getItem("namaUser");

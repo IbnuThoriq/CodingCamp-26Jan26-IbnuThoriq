@@ -53,6 +53,10 @@ body {
   color: #3498db;
 }
 
+.menu-icon {
+  display: none;
+}
+
 /* Header */
 .Hero {
   height: 60vh;
@@ -372,6 +376,48 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+
+  #halaman-portfolio {
+    margin-top: -75px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Foto profil tetap kiri (default) */
+
+  .menu-icon {
+    display: block;
+    margin-left: auto;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .Menu ul {
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    background-color: #2c3e50;
+    flex-direction: column;
+    width: 180px;
+    padding: 10px 0;
+    border-radius: 8px;
+    display: none;
+  }
+
+  .Menu ul.show {
+    display: flex;
+  }
+
+  .Menu ul li {
+    margin: 10px 0;
+    text-align: center;
   }
 }
 

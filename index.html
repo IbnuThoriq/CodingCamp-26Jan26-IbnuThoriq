@@ -4,13 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first Portofolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="Navbar">
       <div class="Foto-Profil"></div>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="ph ph-list"></i>
+      </div>
+
       <div class="Menu">
-        <ul>
+        <ul id="navMenu">
           <li><a href="index.html">Home</a></li>
           <li><a href="OurProfile.html">Our Profile</a></li>
           <li><a href="#halaman-portfolio">Portofolio</a></li>
@@ -53,6 +63,7 @@
           />
         </div>
       </div>
+
       <!-- Our Headquarter -->
       <section class="portfolio">
         <h1 class="Sub-Judul">Our Headquarter</h1>
